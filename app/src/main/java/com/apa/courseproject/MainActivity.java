@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    static int SPLASH_SCREEN = 1000;
+    static int SPLASH_SCREEN = 3500;
 
     //Variabile
     Animation topAnim, bottomAnim, rightAnim;

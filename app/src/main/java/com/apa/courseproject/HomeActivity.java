@@ -30,11 +30,6 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-//    public void openActivity2() {
-//        Intent intent = new Intent(this, GenerateGridActivity.class);
-//        startActivity(intent);
-//    }
-
     public void newGame(View view) {
         Intent intent = new Intent(HomeActivity.this,GenerateGridActivity.class);
         startActivity(intent);

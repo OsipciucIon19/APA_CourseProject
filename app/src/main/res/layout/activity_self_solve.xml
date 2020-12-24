@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GenerateGridActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/generateGrid"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginRight="165dp"
+            android:fontFamily="@font/gill_sans"
+            android:text="Genereaza alt grid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#848484"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="379dp"
+        android:background="@drawable/bg3"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:collapseColumns="*">
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:fontFamily="@font/gill_sans"
+        android:gravity="center"
+        android:text="Sudoku a fost rezolvat\n cu ajutorul algoritmului\nBackTracking"
+        android:textColor="@color/green"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gill_sans"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Numărul de operații elementare efectuate pentru rezolvare :"
+        android:textColor="#848484" />
+
+    <TextView
+        android:id="@+id/textViewNrOpSolved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/franklin"
+        android:gravity="center"
+        android:textColor="#848484"
+        android:textSize="32dp" />
+
+</LinearLayout>

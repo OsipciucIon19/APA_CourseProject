@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/linearLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -7,22 +8,52 @@
     tools:context=".GenerateGridActivity"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/gameTitle"
-        android:text="@string/app_name"
+        android:layout_height="81dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:textSize="50sp"/>
+        android:orientation="horizontal">
 
-    <GridView
-        android:id="@+id/field"
-        android:layout_width="match_parent"
+        <Button
+            android:id="@+id/generateGrid"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/gill_sans"
+            android:text="Generează alt grid"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp"
+            android:textColor="#848484" />
+
+        <Button
+            android:id="@+id/selfSolve"
+            android:layout_width="wrap_content"
+            android:layout_height="69dp"
+            android:backgroundTint="#009688"
+            android:fontFamily="sans-serif-medium"
+            android:text="Self-Solve"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
         android:layout_height="379dp"
-        android:background="@drawable/bg2"></GridView>
-<!--        android:onClick="onClick" />-->
+        android:background="@drawable/bg3"
+        android:collapseColumns="*"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+
+    </TableLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -35,11 +66,13 @@
             android:layout_height="40dp"
             android:background="@drawable/n1" />
 
+
         <Button
             android:id="@+id/btn2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/n2" />
+            android:background="@drawable/n2"/>
+
 
         <Button
             android:id="@+id/btn3"
@@ -86,5 +119,30 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="280px"
+            android:fontFamily="@font/gill_sans"
+            android:text="Nr. de greșeli : "
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/franklin"
+            android:text="0"
+            android:textSize="26dp" />
+
+    </LinearLayout>
 
 </LinearLayout>
